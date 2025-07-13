@@ -98,24 +98,36 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="animate-slide-in-right">
+         <div className="animate-slide-in-right">
               <div className="bg-white rounded-3xl p-8 shadow-2xl border border-slate-100">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl">
-                    <div className="text-3xl font-bold gradient-text mb-2">500+</div>
-                    <div className="text-slate-600 font-medium">Projects Delivered</div>
+                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mx-auto mb-3">
+                      <Code2 className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="text-3xl font-bold gradient-text mb-2">10+</div>
+                    <div className="text-slate-600 font-medium">Tech Stacks Mastered</div>
                   </div>
                   <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl">
-                    <div className="text-3xl font-bold gradient-text-blue mb-2">15+</div>
-                    <div className="text-slate-600 font-medium">Countries Served</div>
+                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mx-auto mb-3">
+                      <Brain className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="text-3xl font-bold gradient-text-blue mb-2">AI</div>
+                    <div className="text-slate-600 font-medium">Powered Solutions</div>
                   </div>
                   <div className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl">
-                    <div className="text-3xl font-bold text-green-600 mb-2">99%</div>
-                    <div className="text-slate-600 font-medium">Client Satisfaction</div>
+                    <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-3">
+                      <Rocket className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="text-3xl font-bold text-green-600 mb-2">5+</div>
+                    <div className="text-slate-600 font-medium">Years Innovation</div>
                   </div>
                   <div className="text-center p-6 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl">
-                    <div className="text-3xl font-bold text-orange-600 mb-2">24/7</div>
-                    <div className="text-slate-600 font-medium">Support Available</div>
+                    <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mx-auto mb-3">
+                      <Shield className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="text-3xl font-bold text-orange-600 mb-2">100%</div>
+                    <div className="text-slate-600 font-medium">Secure Code</div>
                   </div>
                 </div>
               </div>
