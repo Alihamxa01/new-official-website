@@ -98,7 +98,7 @@ export default function Home() {
               </div>
             </div>
 
-         <div className="animate-slide-in-right">
+            <div className="animate-slide-in-right">
               <div className="bg-white rounded-3xl p-8 shadow-2xl border border-slate-100">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl">
@@ -134,6 +134,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
       </section>
 
       {/* What We Do Section */}
