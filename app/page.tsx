@@ -62,28 +62,7 @@ export default function Home() {
         ></div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { number: "500+", label: "Projects Delivered", icon: <Rocket className="w-8 h-8" /> },
-              { number: "15+", label: "Countries Served", icon: <Globe className="w-8 h-8" /> },
-              { number: "99%", label: "Client Satisfaction", icon: <Award className="w-8 h-8" /> },
-              { number: "24/7", label: "Support Available", icon: <Shield className="w-8 h-8" /> },
-            ].map((stat, index) => (
-              <div key={index} className="text-center animate-slide-up">
-                <div className="inline-flex items-center justify-center w-16 h-16 gradient-bg rounded-2xl mb-4 text-white">
-                  {stat.icon}
-                </div>
-                <div className="text-4xl font-bold gradient-text-blue mb-2">{stat.number}</div>
-                <div className="text-slate-600 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+     
       {/* Our Vision Section */}
       <section className="py-24 bg-gradient-to-br from-slate-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -155,8 +134,7 @@ export default function Home() {
             </div>
             <h2 className="text-5xl font-bold mb-6 gradient-text-blue">Our Core Services</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              We specialize in cutting-edge technologies to deliver comprehensive digital solutions that drive business
-              growth
+             Delivering cutting-edge Web Development, smart Chatbots, powerful AI Agents (OpenAI SDK), and tailored Software Solutions for the future-ready business.
             </p>
           </div>
 
@@ -168,21 +146,21 @@ export default function Home() {
                 description:
                   "Modern, responsive websites and applications built with the latest technologies and best practices.",
                 color: "from-purple-500 to-pink-500",
-                bgColor: "from-purple-50 to-pink-50",
+                bgColor: "from-purple-100 to-pink-50",
               },
               {
                 icon: <Brain size={32} />,
                 title: "AI Solutions",
                 description:
-                  "Intelligent systems and machine learning integration to automate and optimize business processes.",
+                  " Advanced AI systems and automation tools designed to enhance efficiency and streamline business operations.",
                 color: "from-blue-500 to-cyan-500",
                 bgColor: "from-blue-50 to-cyan-50",
               },
               {
                 icon: <Palette size={32} />,
-                title: "UI/UX Design",
+                title: "OpenAI Agents",
                 description:
-                  "User-centered design that creates intuitive and engaging digital experiences for your customers.",
+                  " Custom AI agents built with OpenAI's Agent SDK to handle tasks, automate workflows, and deliver intelligent interactions.",
                 color: "from-green-500 to-emerald-500",
                 bgColor: "from-green-50 to-emerald-50",
               },
