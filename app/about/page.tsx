@@ -6,7 +6,7 @@ export default function About() {
       {/* Hero Section */}
       <section className="py-24 gradient-bg relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="animate-fade-in">
+          <div className="animate-fade-in"> 
             <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 mb-8">
               <Users className="w-4 h-4 text-white mr-2" />
               <span className="text-sm font-medium text-white">About reeCoder</span>
@@ -264,26 +264,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* Team Stats */}
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text-blue mb-2">5+</div>
-              <div className="text-slate-600 font-medium">Years Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">500+</div>
-              <div className="text-slate-600 font-medium">Projects Completed</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-green-600 mb-2">15+</div>
-              <div className="text-slate-600 font-medium">Countries Served</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-orange-600 mb-2">24/7</div>
-              <div className="text-slate-600 font-medium">Support Available</div>
-            </div>
-          </div>
-        </div>
+          
       </section>
 
       {/* Future Goals */}
