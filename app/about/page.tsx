@@ -167,54 +167,121 @@ export default function About() {
               <Users className="w-4 h-4 text-green-600 mr-2" />
               <span className="text-sm font-medium text-green-700">Our Team</span>
             </div>
-            <h2 className="text-5xl font-bold mb-6 gradient-text">Global Talent, Local Impact</h2>
+            <h2 className="text-5xl font-bold mb-6 gradient-text">Meet Our Team</h2>
             <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
-              reeCoder is powered by a diverse team of passionate developers, designers, and strategists from around the
-              world. Our remote-first approach allows us to tap into global talent while maintaining the agility and
-              innovation that our clients expect.
+              Meet the passionate innovators behind reeCoder who are dedicated to transforming your digital vision into
+              reality with cutting-edge technology and creative solutions.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Development Team",
-                description:
-                  "Full-stack developers specializing in modern web technologies, AI integration, and scalable architecture solutions.",
-                icon: <Rocket className="w-8 h-8" />,
-                gradient: "from-blue-500 to-cyan-500",
-                bgGradient: "from-blue-50 to-cyan-50",
-              },
-              {
-                title: "Design Team",
-                description:
-                  "UI/UX designers focused on creating intuitive, accessible, and visually stunning user experiences that convert.",
-                icon: <Heart className="w-8 h-8" />,
-                gradient: "from-purple-500 to-pink-500",
-                bgGradient: "from-purple-50 to-pink-50",
-              },
-              {
-                title: "Strategy Team",
-                description:
-                  "Business analysts and project managers who ensure every solution aligns perfectly with client objectives and goals.",
-                icon: <Target className="w-8 h-8" />,
-                gradient: "from-green-500 to-emerald-500",
-                bgGradient: "from-green-50 to-emerald-50",
-              },
-            ].map((team, index) => (
-              <div
-                key={index}
-                className={`bg-gradient-to-br ${team.bgGradient} p-8 rounded-3xl border border-slate-100 text-center hover:shadow-xl transition-all duration-300 transform hover:scale-105 card-hover animate-slide-up`}
-              >
-                <div
-                  className={`w-16 h-16 bg-gradient-to-r ${team.gradient} rounded-2xl flex items-center justify-center text-white mb-6 mx-auto`}
-                >
-                  {team.icon}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            {/* Ali Hamza Card */}
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-3xl border border-purple-100 hover:shadow-2xl transition-all duration-300 transform hover:scale-105 card-hover animate-slide-up">
+              <div className="text-center mb-6">
+                <div className="w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-white">AH</span>
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-slate-900">{team.title}</h3>
-                <p className="text-slate-600 leading-relaxed">{team.description}</p>
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Ali Hamza</h3>
+                <div className="inline-flex items-center px-3 py-1 bg-purple-100 rounded-full mb-2">
+                  <span className="text-sm font-bold text-purple-700">FOUNDER & CHIEF OPERATOR</span>
+                </div>
+                <p className="text-purple-600 font-semibold mb-1">Business Development & Marketing Head</p>
+                <p className="text-slate-600 font-medium">FRONT END DEVELOPER</p>
               </div>
-            ))}
+
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-lg font-bold text-slate-900 mb-3">Core Skills</h4>
+                  <div className="grid grid-cols-2 gap-3">
+                    {[
+                      { name: "Next.js", color: "from-black to-gray-600" },
+                      { name: "Tailwind CSS", color: "from-cyan-500 to-blue-500" },
+                      { name: "Node.js", color: "from-green-500 to-green-600" },
+                      { name: "Figma", color: "from-purple-500 to-pink-500" },
+                      { name: "Python", color: "from-yellow-500 to-blue-500" },
+                    ].map((skill, index) => (
+                      <div key={index} className="flex items-center space-x-2">
+                        <div className={`w-3 h-3 bg-gradient-to-r ${skill.color} rounded-full`}></div>
+                        <span className="text-sm font-medium text-slate-700">{skill.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-purple-200">
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    A dynamic operator combining business strategy with modern front-end development, Ali specializes in building engaging web experiences using Next.js, Tailwind CSS, and Figma — while also leading marketing and client growth at reeCoder.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Najaf Ali Card */}
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-3xl border border-blue-100 hover:shadow-2xl transition-all duration-300 transform hover:scale-105 card-hover animate-slide-up">
+              <div className="text-center mb-6">
+                <div className="w-24 h-24 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-white">NA</span>
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Najaf Ali</h3>
+                <div className="inline-flex items-center px-3 py-1 bg-blue-100 rounded-full mb-2">
+                  <span className="text-sm font-bold text-blue-700">CEO & AI AGENT DEVELOPER</span>
+
+                </div>
+                              
+
+                <p className="text-blue-600 font-semibold mb-1">Lead Developer & Fullstack Developer</p>
+              </div>
+
+ <p className="text-slate-600 font-medium text-center">AI Specialist</p>
+
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-lg font-bold text-slate-900 mb-3">Core Skills</h4>
+                  <div className="grid grid-cols-2 gap-3">
+                    {[
+                      { name: "Python Specialist", color: "from-yellow-500 to-blue-500" },
+                      { name: "Javascript", color: "from-yellow-400 to-orange-500" },
+                      { name: "Next.js", color: "from-black to-gray-600" },
+                      { name: "Figma", color: "from-purple-500 to-pink-500" },
+                      { name: "AI Expert", color: "from-green-400 to-blue-500" },
+                    ].map((skill, index) => (
+                      <div key={index} className="flex items-center space-x-2">
+                        <div className={`w-3 h-3 bg-gradient-to-r ${skill.color} rounded-full`}></div>
+                        <span className="text-sm font-medium text-slate-700">{skill.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-blue-200">
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                Najaf drives the future of automation at reeCoder by crafting advanced AI solutions and intelligent systems. With deep expertise in Python, JavaScript, and Next.js, he leads fullstack development while specializing in building powerful AI agents and tools.
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Team Stats */}
+          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="text-3xl font-bold gradient-text-blue mb-2">5+</div>
+              <div className="text-slate-600 font-medium">Years Experience</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold gradient-text mb-2">500+</div>
+              <div className="text-slate-600 font-medium">Projects Completed</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-green-600 mb-2">15+</div>
+              <div className="text-slate-600 font-medium">Countries Served</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-orange-600 mb-2">24/7</div>
+              <div className="text-slate-600 font-medium">Support Available</div>
+            </div>
           </div>
         </div>
       </section>
