@@ -2,8 +2,9 @@ import { Users, Target, Heart, Lightbulb, Rocket, Shield, Globe, Award } from "l
 
 export default function About() {
   return (
-      {/* Hero Section */}
-      <section className="py-24 gradient-bg relative overflow-hidden">
+
+    
+    <section className="py-24 gradient-bg relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="animate-fade-in"> 
             <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 mb-8">
