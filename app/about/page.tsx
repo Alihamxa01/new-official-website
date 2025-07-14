@@ -3,7 +3,7 @@ import { Users, Target, Heart, Lightbulb, Rocket, Shield, Globe, Award } from "l
 export default function About() {
   return (
 
-    
+    <>
     <section className="py-24 gradient-bg relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="animate-fade-in"> 
@@ -330,6 +330,6 @@ export default function About() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   )
 }
