@@ -165,7 +165,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="text-lg font-bold mb-1 text-slate-900">Email</h3>
-                      <p className="text-slate-700 font-medium">hello@reecoder.com</p>
+                      <p className="text-slate-700 font-medium">info@reecoder.com</p>
                       <p className="text-sm text-slate-500">{"We'll"} respond within 24 hours</p>
                     </div>
                   </div>
@@ -174,12 +174,7 @@ export default function Contact() {
                     <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
                       <Phone size={24} className="text-white" />
                     </div>
-                    <div>
-                      <h3 className="text-lg font-bold mb-1 text-slate-900">Phone</h3>
-                      <p className="text-slate-700 font-medium">+1 (555) 123-4567</p>
-                      <p className="text-sm text-slate-500">Available during business hours</p>
-                    </div>
-                  </div>
+                  
 
                   <div className="flex items-start p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border border-green-100">
                     <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
@@ -198,14 +193,14 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="text-lg font-bold mb-1 text-slate-900">Business Hours</h3>
-                      <p className="text-slate-700 font-medium">Monday - Friday: 9:00 AM - 6:00 PM (EST)</p>
-                      <p className="text-slate-700 font-medium">Saturday: 10:00 AM - 2:00 PM (EST)</p>
-                      <p className="text-sm text-slate-500">Emergency support available 24/7</p>
+                      <p className="text-slate-700 font-medium">Monday - Friday: 9:00 AM - 7:00 PM (EST)</p>
+                      <p className="text-slate-700 font-medium">Saturday: 10:00 AM - 4:00 PM </p>
+                      <p className="text-sm text-slate-500"> support available 24/7</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-3xl border border-slate-200 shadow-lg">
+                <div className="flex justify-center bg-gradient-to-br from-slate-50 to-white p-8 rounded-3xl border border-slate-200 shadow-lg ">
                   <h3 className="text-xl font-bold mb-6 gradient-text-blue">Why Choose reeCoder?</h3>
                   <div className="space-y-4">
                     {[
