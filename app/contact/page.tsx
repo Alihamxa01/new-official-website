@@ -170,11 +170,7 @@ export default function Contact() {
                     </div>
                   </div>
 
-                  <div className="flex items-start p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl border border-purple-100">
-                    <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                      <Phone size={24} className="text-white" />
-                    </div>
-                  
+                
 
                   <div className="flex items-start p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border border-green-100">
                     <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
@@ -193,14 +189,14 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="text-lg font-bold mb-1 text-slate-900">Business Hours</h3>
-                      <p className="text-slate-700 font-medium">Monday - Friday: 9:00 AM - 7:00 PM (EST)</p>
-                      <p className="text-slate-700 font-medium">Saturday: 10:00 AM - 4:00 PM </p>
+                      <p className="text-slate-700 font-medium">Monday - Friday: 9:00 AM - 6:00 PM (EST)</p>
+                      <p className="text-slate-700 font-medium">Saturday: 10:00 AM - 3:00 PM </p>
                       <p className="text-sm text-slate-500"> support available 24/7</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="flex justify-center bg-gradient-to-br from-slate-50 to-white p-8 rounded-3xl border border-slate-200 shadow-lg ">
+                <div className="flex justify-center bg-gradient-to-br from-slate-50 to-white p-8 rounded-3xl border border-slate-200 shadow-lg">
                   <h3 className="text-xl font-bold mb-6 gradient-text-blue">Why Choose reeCoder?</h3>
                   <div className="space-y-4">
                     {[

@@ -2,11 +2,11 @@ import { Card, CardContent } from "@/components/ui/card"
 import {
   Code2,
   Brain,
-  Palette,
   MessageSquare,
   Building2,
   ArrowRight,
   CheckCircle,
+  Repeat,
   Star,
   Zap,
   Users,
@@ -14,6 +14,8 @@ import {
   Target,
   Clock,
   Award,
+  Bot,
+  Lightbulb,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -26,7 +28,6 @@ export default function Services() {
       title: "Web Development",
       subtitle: "Modern Digital Solutions",
       description: "Create stunning, high-performance web applications with cutting-edge technologies.",
-      features: ["Next.js & React", "Responsive Design", "SEO Optimization", "E-commerce Integration"],
       gradient: "from-blue-600 to-cyan-500",
       bgGradient: "from-blue-50 to-cyan-50",
     },
@@ -35,7 +36,7 @@ export default function Services() {
       title: "Custom Software",
       subtitle: "Tailored Business Solutions",
       description: "Transform your business operations with custom software designed for your needs.",
-      features: ["Enterprise Apps", "Database Design", "System Integration", "Cloud Solutions"],
+
       gradient: "from-purple-600 to-pink-500",
       bgGradient: "from-purple-50 to-pink-50",
     },
@@ -43,8 +44,9 @@ export default function Services() {
       icon: <Brain size={40} />,
       title: "AI Integration",
       subtitle: "Intelligent Automation",
-      description: "Harness artificial intelligence to revolutionize your business processes.",
-      features: ["Machine Learning", "NLP Solutions", "Computer Vision", "Predictive Analytics"],
+      description:
+        "We integrate AI into websites, software, and custom agents — and build related solutions tailored to your needs.",
+
       gradient: "from-green-600 to-emerald-500",
       bgGradient: "from-green-50 to-emerald-50",
     },
@@ -52,20 +54,42 @@ export default function Services() {
       icon: <MessageSquare size={40} />,
       title: "Chatbot Development",
       subtitle: "Conversational AI",
-      description: "Enhance customer engagement with intelligent chatbots and AI assistants.",
-      features: ["AI Chatbots", "Multi-Platform", "NLU Integration", "24/7 Support"],
+      description: "We build custom chatbots tailored to your needs — with text, image, and voice support",
+
       gradient: "from-orange-600 to-red-500",
       bgGradient: "from-orange-50 to-red-50",
     },
     {
-      icon: <Palette size={40} />,
-      title: "UI/UX Design",
-      subtitle: "User-Centered Design",
-      description: "Create beautiful, intuitive digital experiences that convert visitors into customers.",
-      features: ["User Research", "Interface Design", "Design Systems", "Usability Testing"],
+      icon: <Bot size={40} />,
+      title: "AI Agent Creation",
+      subtitle: "Intelligent Agents for Smarter Operations",
+      description:
+        "We build custom AI agents that automate tasks, make decisions, and interact naturally with users — tailored to your business needs.",
+
       gradient: "from-pink-600 to-rose-500",
       bgGradient: "from-pink-50 to-rose-50",
     },
+
+{
+  title: "Automation Tools",
+  icon: <Repeat size={40} />,
+  subtitle: "Save Time with Smart Workflows",
+  description: "Automate repetitive tasks, streamline operations, and boost efficiency with custom-built AI-powered automation tools.",
+  gradient: "from-red-500 to-pink-500",
+  bgGradient: "from-pink-100 to-purple-100",
+},
+
+
+    {
+  title: "Custom Solutions",
+  icon: <Lightbulb size={40}/>, 
+  subtitle: "Tailored to Your Needs",
+  description: "We build AI agents, software, and web tools fully customized to your unique business requirements — using modern tech like OpenAI SDK, APIs, and advanced automation.",
+ gradient: "from-orange-500 to-amber-500",
+bgGradient: "from-orange-100 to-yellow-100",
+
+},
+
   ]
 
   return (
@@ -164,7 +188,7 @@ export default function Services() {
             {services.slice(0, 3).map((service, index) => (
               <div
                 key={index}
-                className={`bg-gradient-to-br ${service.bgGradient} p-8 rounded-3xl border border-slate-200 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 card-hover animate-slide-up`}
+                className={`bg-gradient-to-br ${service.bgGradient} p-8 rounded-3xl border border-slate-200 hover:shadow-2xl transition-all duration-500  card-hover `}
               >
                 <div
                   className={`w-16 h-16 bg-gradient-to-r ${service.gradient} rounded-2xl flex items-center justify-center text-white mb-6`}
@@ -174,14 +198,7 @@ export default function Services() {
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">{service.title}</h3>
                 <p className="text-sm font-semibold text-slate-600 mb-4">{service.subtitle}</p>
                 <p className="text-slate-700 mb-6 leading-relaxed">{service.description}</p>
-                <div className="space-y-2 mb-6">
-                  {service.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center">
-                      <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                      <span className="text-sm text-slate-600">{feature}</span>
-                    </div>
-                  ))}
-                </div>
+
                 <Link
                   href="/contact"
                   className={`w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r ${service.gradient} text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300`}
@@ -195,37 +212,31 @@ export default function Services() {
 
           {/* Bottom 2 Services in 2-Column */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {services.slice(3, 5).map((service, index) => (
-              <div
-                key={index + 3}
-                className={`bg-gradient-to-br ${service.bgGradient} p-8 rounded-3xl border border-slate-200 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 card-hover animate-slide-up`}
-              >
-                <div
-                  className={`w-16 h-16 bg-gradient-to-r ${service.gradient} rounded-2xl flex items-center justify-center text-white mb-6`}
-                >
-                  {service.icon}
-                </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">{service.title}</h3>
-                <p className="text-sm font-semibold text-slate-600 mb-4">{service.subtitle}</p>
-                <p className="text-slate-700 mb-6 leading-relaxed">{service.description}</p>
-                <div className="grid grid-cols-2 gap-2 mb-6">
-                  {service.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center">
-                      <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                      <span className="text-sm text-slate-600">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-                <Link
-                  href="/contact"
-                  className={`w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r ${service.gradient} text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300`}
-                >
-                  Get Started
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
-              </div>
-            ))}
-          </div>
+  {services.slice(3, 7).map((service, index) => (
+    <div
+      key={index + 2}
+      className={`bg-gradient-to-br ${service.bgGradient} p-8 rounded-3xl border border-slate-200 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 card-hover animate-slide-up`}
+    >
+      <div
+        className={`w-16 h-16 bg-gradient-to-r ${service.gradient} rounded-2xl flex items-center justify-center text-white mb-6`}
+      >
+        {service.icon}
+      </div>
+      <h3 className="text-2xl font-bold text-slate-900 mb-2">{service.title}</h3>
+      <p className="text-sm font-semibold text-slate-600 mb-4">{service.subtitle}</p>
+      <p className="text-slate-700 mb-6 leading-relaxed">{service.description}</p>
+
+      <Link
+        href="/contact"
+        className={`w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r ${service.gradient} text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300`}
+      >
+        Get Started
+        <ArrowRight className="ml-2 w-4 h-4" />
+      </Link>
+    </div>
+  ))}
+</div>
+
         </div>
       </section>
 
