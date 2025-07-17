@@ -12,8 +12,16 @@ export const metadata: Metadata = {
   description:
     "Leading software house delivering cutting-edge web development, AI solutions, and digital transformation services. Building the future of technology.",
   keywords: "software house, web development, AI solutions, digital transformation, custom software, mobile apps",
-    generator: 'v0.dev'
+    generator: 'v0.dev',
+
+  icons: { // <--- Add this section
+    icon: '/reecoderlogo.png', // For .ico files
+    shortcut: '/reecoderlogo.png', // For smaller PNG icons
+    apple: '/reecoderlogo.png', // For Apple devices
+   
+  },
 }
+
 
 export default function RootLayout({
   children,
