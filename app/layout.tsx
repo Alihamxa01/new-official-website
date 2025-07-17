@@ -8,11 +8,11 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "reeCoder - Innovative Software Solutions",
+  title: "reeCoder - Innovative Software & AI Solutions",
   description:
-    "Leading software house delivering cutting-edge web development, AI solutions, and digital transformation services. Building the future of technology.",
-  keywords: "software house, web development, AI solutions, digital transformation, custom software, mobile apps",
-    generator: 'v0.dev',
+    "A future-focused software house specializing in AI agents, intelligent chatbots, full-stack web development, and enterprise-ready digital solutions.|| WE BUILD WHAT YOU IMAGINE",
+  keywords: "AI Agents, software house, web development, AI solutions, digital transformation, Chatbot,API Developer ",
+    generator: 'reeCoder',
 
   icons: { // <--- Add this section
     icon: '/reecoderlogo.png', // For .ico files
