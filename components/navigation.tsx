@@ -26,14 +26,14 @@ export default function Navigation() {
           </Link> */}
 
 <Link href="/" className="flex items-center space-x-2">
-  <div className="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
+  <div className="w-10 h-10 flex items-center justify-center">
     <img
       src="/reecoderlogo.png"
       alt="reeCoder Logo"
-      className="w-6 h-6 object-contain"
+      className="w-8 h-10 object-contain"
     />
   </div>
-  <span className="text-2xl font-bold gradient-text">reeCoder</span>
+  <span className="text-2xl font-bold text-black ">reeCoder</span>
 </Link>
 
 
