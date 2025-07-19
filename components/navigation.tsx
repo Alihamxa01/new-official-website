@@ -25,7 +25,7 @@ export default function Navigation() {
             <span className="text-2xl font-bold gradient-text">reeCoder</span>
           </Link> */}
 
-<Link href="/" className="flex items-center space-x-1">
+<Link href="/" className="flex items-center spaces-x-0">
   <div className="flex items-center justify-center">
     <img
       src="/reecoderlogo.png"
@@ -33,7 +33,7 @@ export default function Navigation() {
       className="h-16 w-auto object-contain"
     />
   </div>
-  <span className="text-2xl font-bold text-black ">reeCoder</span>
+  <span className="text-2xl font-bold text-black ">eeCoder</span>
 </Link>
 
 
