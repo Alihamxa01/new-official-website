@@ -28,7 +28,7 @@ export default function Navigation() {
 <Link href="/" className="flex items-center spaces-x-0">
   <div className="flex items-center justify-center">
     <img
-      src="/reecoderlogo.png"
+      src="/newRlogo.png"
       alt="reeCoder Logo"
       className="h-16 w-auto object-contain"
     />
