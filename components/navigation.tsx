@@ -30,7 +30,7 @@ export default function Navigation() {
     <img
       src="/newRlogo.png"
       alt="reeCoder Logo"
-      className="h-16 w-auto object-contain"
+      className="h-24 w-auto object-contain"
     />
   </div>
   <span className="text-2xl font-bold text-black ">eeCoder</span>
