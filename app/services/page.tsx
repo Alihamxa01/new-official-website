@@ -12,12 +12,13 @@ import {
   Users,
   Sparkles,
   Target,
-  Clock,
   Award,
   Bot,
   Lightbulb,
+  CodeXml,
+   DollarSign, BadgeDollarSign, Settings, Timer
 } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { FileText, Scale, Clock, SquareStack, Calendar, Cpu } from "lucide-react"
 import Link from "next/link"
 
 export default function Services() {
@@ -62,14 +63,16 @@ export default function Services() {
       gradient: "from-pink-600 to-rose-500",
       bgGradient: "from-pink-50 to-rose-50",
     },
-    {
-      title: "Automation Tools",
-      icon: <Repeat className="w-8 h-8 md:w-10 md:h-10" />,
-      subtitle: "Save Time with Smart Workflows",
-      description: "Automate repetitive tasks, streamline operations, and boost efficiency with custom-built AI-powered automation tools.",
-      gradient: "from-red-500 to-pink-500",
-      bgGradient: "from-pink-100 to-purple-100",
-    },
+  {
+  title: "API Development",
+  icon: <CodeXml className="w-8 h-8 md:w-10 md:h-10" />,
+  subtitle: "High-Performance API Solutions",
+  description:
+    "We create simple and fast APIs that make it easy for your apps to work together, share information, and run more smoothly and efficiently.",
+  gradient: "from-green-500 to-lime-500",
+  bgGradient: "from-lime-100 to-green-100",
+},
+
     {
       title: "Custom Solutions",
       icon: <Lightbulb className="w-8 h-8 md:w-10 md:h-10" />,
@@ -83,33 +86,60 @@ export default function Services() {
   return (
     <div className="pt-16 md:pt-20">
       {/* Hero Section */}
+
+
+
+ <section className="py-12 md:py-24 gradient-bg-blue relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="animate-fade-in">
+           <div className="inline-flex items-center px-3 py-1 md:px-4 md:py-2  bg-blue-400 rounded-full mb-4 md:mb-6">
+                <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-blue-600 mr-1 md:mr-2" />
+                <span className="text-xs md:text-sm text-blue-700 font-semibold" >Professional Services</span>
+              </div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white">Our Expert Services</h1>
+            <p className="text-base md:text-lg lg:text-xl text-white/90 max-w-3xl md:max-w-4xl mx-auto leading-relaxed">
+  From concept to launch, we deliver powerful, scalable AI integration services that help you grow, engage, and lead in your industry.
+            </p>
+          </div>
+        </div>
+
+        {/* Floating orbs */}
+        <div className="absolute top-10 md:top-20 left-5 md:left-10 w-16 h-16 md:w-24 md:h-24 bg-white/10 rounded-full animate-float" />
+        <div
+          className="absolute bottom-10 md:bottom-20 right-5 md:right-10 w-20 h-20 md:w-32 md:h-32 bg-white/10 rounded-full animate-float"
+          style={{ animationDelay: "2s" }}
+        />
+      </section>
+
+
+
+
+      
       <section className="py-12 md:py-20 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="animate-slide-in-left">
-              <div className="inline-flex items-center px-3 py-1 md:px-4 md:py-2 bg-purple-100 rounded-full mb-4 md:mb-6">
-                <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-purple-600 mr-1 md:mr-2" />
-                <span className="text-xs md:text-sm font-medium text-purple-700">Professional Services</span>
-              </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-6 gradient-text leading-tight">
-                Our Expert <span className="gradient-text-blue">Services</span>
-              </h1>
-              <p className="text-base md:text-xl text-slate-600 mb-6 md:mb-8 leading-relaxed">
-                Comprehensive digital solutions designed to transform your business and accelerate growth through
-                innovative technology.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center px-6 py-3 md:px-8 md:py-4 gradient-bg text-white font-semibold rounded-lg md:rounded-xl hover:shadow-lg md:hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] md:hover:scale-105 text-sm md:text-base"
-                >
-                  Get Started
-                  <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
-                </Link>
+  <div className="inline-flex items-center px-3 py-1 md:px-4 md:py-2 bg-blue-100 rounded-full mb-4 md:mb-6">
+    <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-blue-600 mr-1 md:mr-2" />
+    <span className="text-xs md:text-sm font-medium text-blue-700">Trusted Solutions</span>
+  </div>
+  <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-6 gradient-text-blue leading-tight">
+    High-Impact <span className="gradient-text-blue">Digital Services</span>
+  </h1>
+  <p className="text-base md:text-xl text-slate-600 mb-6 md:mb-8 leading-relaxed">
+    We deliver reliable and scalable digital services tailored to your needs — helping you innovate faster, operate smarter, and achieve growth.
+  </p>
+  <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
+    <Link
+      href="/contact"
+      className="inline-flex items-center px-6 py-3 md:px-8 md:py-4 gradient-bg-blue text-white font-semibold rounded-lg md:rounded-xl hover:shadow-lg md:hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] md:hover:scale-105 text-sm md:text-base"
+    >
+      Let’s Work Together
+      <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
+    </Link>
+  </div>
+</div>
 
-                
-              </div>
-            </div>
             <div className="animate-slide-in-right">
               <div className="relative">
                 <div className="bg-gradient-to-br from-slate-50 to-white p-6 md:p-8 rounded-2xl md:rounded-3xl shadow-xl md:shadow-2xl border border-slate-200">
@@ -225,115 +255,160 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-12 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 items-center">
-            <div className="lg:col-span-1 animate-slide-in-left">
-              <div className="inline-flex items-center px-3 py-1 md:px-4 md:py-2 bg-green-100 rounded-full mb-4 md:mb-6">
-                <Award className="w-3 h-3 md:w-4 md:h-4 text-green-600 mr-1 md:mr-2" />
-                <span className="text-xs md:text-sm font-medium text-green-700">Why Choose Us</span>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 gradient-text">Why reeCoder?</h2>
-              <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-                We combine technical expertise with business understanding to deliver solutions that drive real results
-                for your business.
-              </p>
-            </div>
-            <div className="lg:col-span-2 animate-slide-in-right">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-                {[
-                  {
-                    icon: <Building2 className="w-6 h-6 md:w-8 md:h-8" />,
-                    title: "Scalable Solutions",
-                    description: "Built to grow with your business",
-                    gradient: "from-purple-500 to-pink-500",
-                  },
-                  {
-                    icon: <Users className="w-6 h-6 md:w-8 md:h-8" />,
-                    title: "Expert Team",
-                    description: "Seasoned professionals with deep expertise",
-                    gradient: "from-blue-500 to-cyan-500",
-                  },
-                  {
-                    icon: <Zap className="w-6 h-6 md:w-8 md:h-8" />,
-                    title: "Fast Delivery",
-                    description: "Quick turnaround without compromising quality",
-                    gradient: "from-green-500 to-emerald-500",
-                  },
-                  {
-                    icon: <Award className="w-6 h-6 md:w-8 md:h-8" />,
-                    title: "Quality Assured",
-                    description: "Rigorous testing and quality control",
-                    gradient: "from-orange-500 to-red-500",
-                  },
-                ].map((item, index) => (
-                  <div
-                    key={index}
-                    className="bg-gradient-to-br from-slate-50 to-white p-4 md:p-6 rounded-xl md:rounded-2xl border border-slate-200 hover:shadow-md md:hover:shadow-lg transition-all duration-300"
-                  >
-                    <div
-                      className={`w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r ${item.gradient} rounded-lg md:rounded-xl flex items-center justify-center text-white mb-3 md:mb-4`}
-                    >
-                      {item.icon}
-                    </div>
-                    <h3 className="text-base md:text-lg font-bold text-slate-900 mb-1 md:mb-2">{item.title}</h3>
-                    <p className="text-sm md:text-base text-slate-600">{item.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Pricing Section */}
-      <section className="py-12 md:py-20 bg-muted/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">Project Pricing</h2>
-            <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 md:mb-8">
-              Every project is unique, and so is our pricing approach.
-            </p>
-          </div>
 
-          <Card className="border-0 bg-background/50 backdrop-blur-sm">
-            <CardContent className="p-6 md:p-12 text-center">
-              <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
-                <CheckCircle className="h-8 w-8 md:h-10 md:w-10 text-white" />
-              </div>
-              <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Tailored Pricing for Every Project</h3>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6 md:mb-8 max-w-2xl mx-auto">
-                Our project pricing depends on the specific requirements, complexity, and scope of your project. We
-                believe in transparent, fair pricing that reflects the value we deliver.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
-                <div className="text-center p-3 md:p-4">
-                  <h4 className="font-semibold mb-1 md:mb-2 text-primary text-sm md:text-base">Project Scope</h4>
-                  <p className="text-xs md:text-sm text-muted-foreground">Complexity and features required</p>
-                </div>
-                <div className="text-center p-3 md:p-4">
-                  <h4 className="font-semibold mb-1 md:mb-2 text-primary text-sm md:text-base">Timeline</h4>
-                  <p className="text-xs md:text-sm text-muted-foreground">Delivery schedule and urgency</p>
-                </div>
-                <div className="text-center p-3 md:p-4">
-                  <h4 className="font-semibold mb-1 md:mb-2 text-primary text-sm md:text-base">Technology Stack</h4>
-                  <p className="text-xs md:text-sm text-muted-foreground">Tools and technologies used</p>
-                </div>
-              </div>
-              <Link href="/contact">
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-sm md:text-base"
+{/* Signature Expertise */}
+<section className="py-12 md:py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    {/* Centered Signature Expertise */}
+    <div className="flex justify-center mb-10">
+      <div className="inline-flex items-center justify-center px-4 py-2 bg-gradient-to-r from-blue-600 via-sky-600 to-sky-500 rounded-full">
+        <Sparkles className="w-4 h-4 text-white mr-2" />
+        <span className="text-sm font-medium text-white">Signature Expertise</span>
+      </div>
+    </div>
+
+    {/* Main Content Grid */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div className="animate-slide-in-left">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-500 to-sky-400 text-transparent bg-clip-text">
+          AI <span className="bg-gradient-to-r from-blue-500 to-sky-600 text-transparent bg-clip-text">Automation Specialists</span>
+        </h2>
+
+        <p className="text-base md:text-lg text-slate-600 mb-6 md:mb-8 leading-relaxed">
+          We specialize in building AI agents that automate most of your tasks, saving you valuable time and effort.
+          These agents are powered by advanced technologies like the OpenAI Agent SDK. In addition, we create fully
+          customizable AI chatbots tailored to your business needs.
+        </p>
+        <p className="text-base md:text-lg text-slate-600 mb-6 md:mb-8 leading-relaxed">
+          Our team has deep expertise in AI development, We also build advanced chatbots and create powerful APIs to help your systems work better.<br></br> With our solutions, your business can become more efficient, reliable, and productive.
+        </p>
+        <Link
+          href="/contact"
+          className="inline-flex items-center px-6 py-3 md:px-8 md:py-4 gradient-bg-blue text-white font-semibold rounded-lg md:rounded-xl hover:shadow-lg md:hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] md:hover:scale-105 text-sm md:text-base"
+        >
+          Automate Your Workflow
+          <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
+        </Link>
+      </div>
+
+      <div className="animate-slide-in-right">
+        <div className="bg-gradient-to-br from-slate-50 to-white p-6 md:p-8 rounded-2xl md:rounded-3xl shadow-xl border border-slate-200">
+          <div className="space-y-6 md:space-y-8">
+            {[
+              {
+                icon: <Bot className="w-6 h-6 md:w-8 md:h-8" />,
+                title: "AI-Powered Automation",
+                description: "Transform your operations with custom AI agents built using the OpenAI Agent SDK. From intelligent chatbots to complex task automation and data processing.",
+                gradient: "from-orange-600 to-orange-400",
+              },
+              {
+                icon: <Repeat className="w-6 h-6 md:w-8 md:h-8" />,
+                title: "End-to-End Task Automation",
+                description: "Eliminate repetitive manual processes with intelligent automation that streamlines workflows, improves accuracy, and accelerates productivity.",
+                gradient: "from-blue-600 to-cyan-500",
+              },
+              {
+                icon: <Code2 className="w-6 h-6 md:w-8 md:h-8" />,
+                title: "Next-Gen Web Development",
+                description: "We craft fast, scalable, and modern websites tailored for outstanding performance, responsiveness, and user experience using the latest technologies.",
+                gradient: "from-green-600 to-emerald-500",
+              },
+            ].map((feature, index) => (
+              <div key={index} className="flex items-start space-x-4 md:space-x-6">
+                <div
+                  className={`w-12 h-12 md:w-14 md:h-14 bg-gradient-to-r ${feature.gradient} rounded-xl flex items-center justify-center text-white flex-shrink-0 mt-1`}
                 >
-                  Get Your Custom Quote
-                  <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
-                </Button>
-              </Link>
-            </CardContent>
-          </Card>
+                  {feature.icon}
+                </div>
+                <div>
+                  <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1 md:mb-2">{feature.title}</h3>
+                  <p className="text-sm md:text-base text-slate-600">{feature.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section className="py-16 md:py-24 bg-slate-50">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    {/* Tagline Badge */}
+    <div className="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full mb-6 md:mb-8">
+      <Sparkles className="w-4 h-4 text-blue-600 mr-2" />
+      <span className="text-sm font-medium text-blue-700">Transparent Pricing</span>
+    </div>
+
+    {/* Main Heading */}
+    <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text-blue pb-5">
+      Project Pricing
+    </h2>
+
+    {/* Subheading */}
+    <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-12 leading-relaxed">
+      Every project we build is unique — just like your goals. That’s why we don’t stick to fixed packages.
+      Instead, our pricing adapts to your vision, complexity, and timeline.
+    </p>
+
+    {/* Pricing Card */}
+    <div className="bg-gradient-to-br from-gray-100 to-gray-50 p-8 md:p-12 rounded-3xl border border-slate-200 shadow-lg text-left max-w-5xl mx-auto">
+      <div className="flex items-center gap-4 mb-6 text-blue-600">
+        <BadgeDollarSign className="w-8 h-8" />
+        <h3 className="text-2xl font-semibold text-slate-900">How We Price Our Projects</h3>
+      </div>
+      <p className="text-base md:text-lg text-slate-700">
+        Our pricing depends on your project’s <span className="font-medium text-slate-900">timeline</span>,
+        <span className="font-medium text-slate-900"> complexity</span>, and <span className="font-medium text-slate-900">business goals</span>.
+        We ensure a pricing structure that’s fair, customized, and reflects the real value we deliver — not just a generic rate.
+      </p>
+
+      {/* Highlights */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        <div className="flex items-start gap-4">
+          <div className="bg-blue-100 p-3 rounded-xl">
+            <Timer className="w-6 h-6 text-blue-600" />
+          </div>
+          <div>
+            <h4 className="font-semibold text-lg text-slate-800">Timeline-Based</h4>
+            <p className="text-sm text-slate-600">Shorter or urgent timelines may affect the pricing based on effort and speed.</p>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-4">
+          <div className="bg-purple-100 p-3 rounded-xl">
+            <Settings className="w-6 h-6 text-purple-600" />
+          </div>
+          <div>
+            <h4 className="font-semibold text-lg text-slate-800">Complexity Focused</h4>
+            <p className="text-sm text-slate-600">More complex features and logic increase planning, coding, and testing time.</p>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-4">
+          <div className="bg-green-100 p-3 rounded-xl">
+            <DollarSign className="w-6 h-6 text-green-600" />
+          </div>
+          <div>
+            <h4 className="font-semibold text-lg text-slate-800">Value-Oriented</h4>
+            <p className="text-sm text-slate-600">We price based on the value delivered — not just hours worked.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Process */}
       <section className="py-12 md:py-20 bg-gradient-to-br from-slate-50 to-white">

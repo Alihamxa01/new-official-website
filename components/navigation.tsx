@@ -28,12 +28,12 @@ export default function Navigation() {
 <Link href="/" className="flex items-center spaces-x-0">
   <div className="flex items-center justify-center">
     <img
-      src="/newRlogo.png"
+      src="/imgg.png"
       alt="reeCoder Logo"
-      className="h-24 w-auto object-contain"
+      className="h-16  w-auto object-contain"
     />
   </div>
-  <span className="text-2xl font-bold text-black ">eeCoder</span>
+  {/* <span className="text-2xl font-bold text-black ">eeCoder</span> */}
 </Link>
 
 
@@ -54,7 +54,7 @@ export default function Navigation() {
           <div className="hidden md:block">
             <Link
               href="/contact"
-              className="px-6 py-3 gradient-bg text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+              className="px-6 py-3 gradient-bg-blue text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               Get Started
             </Link>
