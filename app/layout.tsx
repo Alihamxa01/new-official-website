@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     generator: 'reeCoder',
 
   icons: { // <--- Add this section
-    icon: '/reecoderlogo.png', // For .ico files
-    shortcut: '/reecoderlogo.png', // For smaller PNG icons
-    apple: '/reecoderlogo.png', // For Apple devices
+    icon: '/imgg.png', // For .ico files
+    shortcut: '/imgg.png', // For smaller PNG icons
+    apple: '/imgg.png', // For Apple devices
    
   },
 }
