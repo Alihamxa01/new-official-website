@@ -17,7 +17,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="pt-6 md:pt-10">
+    <div className="pt-2 md:pt-4">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden floating-shapes">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
