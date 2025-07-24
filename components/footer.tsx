@@ -48,10 +48,7 @@ export default function Footer() {
                 <Mail size={18} className="mr-3 text-indigo-400" />
                 info@reecoder.com
               </li>
-              <li className="flex items-center text-slate-300 text-sm">
-                <Phone size={18} className="mr-3 text-indigo-400" />
-                +1 (555) 789-0123
-              </li>
+             
               <li className="flex items-center text-slate-300 text-sm">
                 <MapPin size={18} className="mr-3 text-indigo-400" />
                 Global Digital Hub
