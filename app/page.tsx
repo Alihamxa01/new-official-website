@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="pt-1">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden floating-shapes">
+      <section className="relative min-h-[70vh] md:min-h-screen flex items-center justify-center overflow-hidden floating-shapes">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="animate-fade-in">
             <div className="inline-flex items-center px-3 py-1 md:px-4 md:py-2 bg-white/50 backdrop-blur-sm rounded-full border border-slate-200 mb-6 md:mb-8">
