@@ -71,12 +71,12 @@ export default function Footer() {
               >
                 <Linkedin className="w-6 h-6 text-white" />
               </a>
-{/*               <a
-                href="#"
+              <a
+                href="https://x.com/thereecoder"
                 className="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center hover:bg-indigo-500 transition-all duration-300 transform hover:scale-105"
               >
                 <Twitter className="w-6 h-6 text-white" />
-              </a> */}
+              </a>
             </div>
           </div>
         </div>
