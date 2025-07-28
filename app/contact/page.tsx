@@ -252,32 +252,36 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="bg-white p-6 md:p-8 lg:p-12 rounded-2xl md:rounded-3xl shadow-xl md:shadow-2xl border border-slate-100 animate-slide-up">
-            <div className="aspect-video bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl md:rounded-2xl flex items-center justify-center relative overflow-hidden">
-              <div className="text-center relative z-10 px-4">
-                <div className="w-16 h-16 md:w-20 md:h-20 gradient-bg rounded-xl md:rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6">
-                  <Globe size={30} className="text-white" />
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 gradient-text-blue">Global Remote Excellence</h3>
-                <p className="text-sm md:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                  Our distributed team allows us to provide 24/7 support and work across different time zones to serve
-                  our international clients effectively. We understand global markets and deliver solutions that work
-                  everywhere.
-                </p>
-              </div>
+         <div className="max-w-lg mx-auto bg-white p-4 md:p-5 rounded-2xl shadow-lg border border-slate-200 animate-slide-up">
+  <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl flex items-center justify-center relative overflow-hidden">
+    <div className="text-center relative z-10 px-4 py-5">
+      <div className="w-14 h-14 md:w-20 md:h-20 gradient-bg rounded-xl flex items-center justify-center mx-auto mb-4">
+        <Globe size={32} className="text-white" />
+      </div>
+      <h3 className="text-xl md:text-2xl font-semibold mb-3 gradient-text-blue">
+        Global Remote Excellence
+      </h3>
+      <p className="text-base md:text-lg text-slate-700 max-w-lg mx-auto leading-relaxed">
+        Our distributed team allows us to provide 24/7 support and work across time zones to serve
+        international clients effectively. We understand global markets and deliver solutions that work
+        everywhere.
+      </p>
+    </div>
 
-              {/* Floating Elements */}
-              <div className="absolute top-5 md:top-10 left-5 md:left-10 w-12 h-12 md:w-16 md:h-16 bg-blue-200 rounded-full opacity-50 animate-float"></div>
-              <div
-                className="absolute bottom-5 md:bottom-10 right-5 md:right-10 w-14 h-14 md:w-20 md:h-20 bg-purple-200 rounded-full opacity-50 animate-float"
-                style={{ animationDelay: "2s" }}
-              ></div>
-              <div
-                className="absolute top-1/2 right-10 md:right-20 w-10 h-10 md:w-12 md:h-12 bg-green-200 rounded-full opacity-50 animate-float"
-                style={{ animationDelay: "4s" }}
-              ></div>
-            </div>
-          </div>
+    {/* Floating Elements */}
+    <div className="absolute top-3 left-3 w-8 h-8 bg-blue-200 rounded-full opacity-40 animate-float"></div>
+    <div
+      className="absolute bottom-3 right-3 w-10 h-10 bg-purple-200 rounded-full opacity-40 animate-float"
+      style={{ animationDelay: "2s" }}
+    ></div>
+    <div
+      className="absolute top-1/2 right-4 w-8 h-8 bg-green-200 rounded-full opacity-40 animate-float"
+      style={{ animationDelay: "4s" }}
+    ></div>
+  </div>
+</div>
+
+
         </div>
       </section>
     </div>
