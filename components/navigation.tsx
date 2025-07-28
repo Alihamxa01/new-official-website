@@ -1,3 +1,102 @@
+// "use client"
+
+// import Link from "next/link"
+// import { useState } from "react"
+// import { Menu, X, Zap } from "lucide-react"
+
+// export default function Navigation() {
+//   const [isOpen, setIsOpen] = useState(false)
+
+//   const navItems = [
+//     { name: "Home", href: "/" },
+//     { name: "About", href: "/about" },
+//     { name: "Services", href: "/services" },
+//     { name: "Contact", href: "/contact" },
+//   ]
+
+//   return (
+//     <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-slate-200/50 z-50 shadow-sm">
+//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//         <div className="flex justify-between items-center h-20">
+// {/*           <Link href="/" className="flex items-center space-x-2">
+//             <div className="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
+//               <Zap className="w-6 h-6 text-white" />
+//             </div>
+//             <span className="text-2xl font-bold gradient-text">reeCoder</span>
+//           </Link> */}
+
+// <Link href="/" className="flex items-center spaces-x-0">
+//   <div className="flex items-center justify-center">
+//     <img
+//       src="/imgg.png"
+//       alt="reeCoder Logo"
+//       className="h-16  w-auto object-contain"
+//     />
+//   </div>
+//   {/* <span className="text-2xl font-bold text-black ">eeCoder</span> */}
+// </Link>
+
+
+//           {/* Desktop Navigation */}
+//           <div className="hidden md:flex space-x-8">
+//             {navItems.map((item) => (
+//               <Link
+//                 key={item.name}
+//                 href={item.href}
+//                 className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 relative group"
+//               >
+//                 {item.name}
+//                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 gradient-bg group-hover:w-full transition-all duration-300"></span>
+//               </Link>
+//             ))}
+//           </div>
+
+//           <div className="hidden md:block">
+//             <Link
+//               href="/contact"
+//               className="px-6 py-3 gradient-bg-blue text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+//             >
+//               Get Started
+//             </Link>
+//           </div>
+
+//           {/* Mobile menu button */}
+//           <div className="md:hidden">
+//             <button onClick={() => setIsOpen(!isOpen)} className="text-slate-600 hover:text-slate-900 p-2">
+//               {isOpen ? <X size={24} /> : <Menu size={24} />}
+//             </button>
+//           </div>
+//         </div>
+
+//         {/* Mobile Navigation */}
+//         {isOpen && (
+//           <div className="md:hidden">
+//             <div className="px-2 pt-2 pb-3 space-y-1 bg-white rounded-lg mt-2 shadow-lg border border-slate-200">
+//               {navItems.map((item) => (
+//                 <Link
+//                   key={item.name}
+//                   href={item.href}
+//                   className="block px-3 py-2 text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200"
+//                   onClick={() => setIsOpen(false)}
+//                 >
+//                   {item.name}
+//                 </Link>
+//               ))}
+//               <Link
+//                 href="/contact"
+//                 className="block mx-3 mt-4 px-4 py-2 gradient-bg text-white font-semibold rounded-lg text-center"
+//                 onClick={() => setIsOpen(false)}
+//               >
+//                 Get Started
+//               </Link>
+//             </div>
+//           </div>
+//         )}
+//       </div>
+//     </nav>
+//   )
+// }
+
 "use client"
 
 import Link from "next/link"
@@ -17,66 +116,64 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-slate-200/50 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-{/*           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
-              <Zap className="w-6 h-6 text-white" />
+        <div className="flex justify-between items-center h-16 md:h-20">
+          {/* Logo with responsive sizing */}
+          <Link href="/" className="flex items-center">
+            <div className="flex items-center justify-center">
+              <img
+                src="/imgg.png"
+                alt="reeCoder Logo"
+                className="h-10 w-auto sm:h-12 md:h-14 lg:h-16 object-contain transition-all duration-300"
+              />
             </div>
-            <span className="text-2xl font-bold gradient-text">reeCoder</span>
-          </Link> */}
-
-<Link href="/" className="flex items-center spaces-x-0">
-  <div className="flex items-center justify-center">
-    <img
-      src="/imgg.png"
-      alt="reeCoder Logo"
-      className="h-16  w-auto object-contain"
-    />
-  </div>
-  {/* <span className="text-2xl font-bold text-black ">eeCoder</span> */}
-</Link>
-
+          </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 relative group"
+                className="text-sm lg:text-base text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 relative group"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 gradient-bg group-hover:w-full transition-all duration-300"></span>
               </Link>
             ))}
-          </div>
-
-          <div className="hidden md:block">
+            
             <Link
               href="/contact"
-              className="px-6 py-3 gradient-bg-blue text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+              className="ml-2 px-4 py-2 lg:px-6 lg:py-3 gradient-bg-blue text-white font-semibold rounded-lg md:rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105 text-sm lg:text-base"
             >
               Get Started
             </Link>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-slate-600 hover:text-slate-900 p-2">
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+          <div className="md:hidden flex items-center">
+            <button 
+              onClick={() => setIsOpen(!isOpen)} 
+              className="text-slate-600 hover:text-slate-900 p-2 focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white rounded-lg mt-2 shadow-lg border border-slate-200">
+          <div className="md:hidden animate-fade-in-down">
+            <div className="px-2 pt-2 pb-4 space-y-2 bg-white rounded-lg mt-2 shadow-lg border border-slate-200">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200"
+                  className="block px-3 py-3 text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 hover:bg-slate-50 rounded-md"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
@@ -84,7 +181,7 @@ export default function Navigation() {
               ))}
               <Link
                 href="/contact"
-                className="block mx-3 mt-4 px-4 py-2 gradient-bg text-white font-semibold rounded-lg text-center"
+                className="block mx-2 mt-2 px-4 py-3 gradient-bg text-white font-semibold rounded-lg text-center hover:shadow-md transition-all duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 Get Started
