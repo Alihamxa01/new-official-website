@@ -1,6 +1,5 @@
 
-
-    import type React from "react";
+import type React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -14,9 +13,9 @@ export const metadata: Metadata = {
   description:
     "reeCoder is a future-focused software house specializing in AI agents, intelligent chatbots, full-stack web development, and enterprise-ready digital transformation solutions. WE BUILD WHAT YOU IMAGINE.",
   keywords:
-    "reeCoder, reecoder, AI Agents, software house, custom software development, backend development, AI solutions, automation tools, digital transformation, intelligent chatbot, chatbot development, enterprise software, API development, app development, full-stack development, reecoder.com, machine learning, deep learning, API integration, tech startup, innovation lab, business automation, smart software, scalable solutions, modern web apps, AI-powered tools, AI automation, software, no-code solutions, low-code platforms",
+    "reeCoder, reecoder, AI Agents, software house, custom software development, web development, AI solutions, automation tools, digital transformation, intelligent chatbot, chatbot development, enterprise software, API development, app development, full-stack development, reecoder.com , machine learning, deep learning, API integration, tech startup, innovation lab, business automation, smart software, scalable solutions, modern web apps, AI-powered tools, digital products, AI automation, software consultancy, no-code solutions, low-code platforms",
   generator: "reeCoder",
-  metadataBase: new URL("https://www.reecoder.com"),
+  metadataBase: new URL("https://www.reecoder.com"), // Replace with your domain
   alternates: {
     canonical: "https://www.reecoder.com",
   },
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "reeCoder",
     images: [
       {
-        url: "/imgg.png",
+        url: "/imgg.png", // ideally a 1200x630 image
         width: 1200,
         height: 630,
         alt: "reeCoder Logo",
@@ -42,7 +41,7 @@ export const metadata: Metadata = {
     title: "reeCoder - Innovative Software & AI Solutions",
     description:
       "Future-ready software and AI systems to automate, enhance, and grow your digital presence.",
-    site: "@thereecoder",
+    site: "@thereecoder", // optional, your Twitter handle
     images: ["/imgg.png"],
   },
   icons: {
@@ -51,6 +50,7 @@ export const metadata: Metadata = {
     apple: "/imgg.png",
   },
   category: "technology",
+  
 };
 
 export default function RootLayout({
@@ -62,7 +62,10 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <link rel="manifest" href="/manifest.json" />
         <script
@@ -76,11 +79,12 @@ export default function RootLayout({
               logo: "https://www.reecoder.com/imgg.png",
               sameAs: [
                 "https://twitter.com/thereecoder",
-                "https://www.linkedin.com/company/reecoder",
-                "https://www.instagram.com/thereecoder",
+                "https://linkedin.com/company/reecoder",
+                "https://www.instagram.com/thereecoder/"
+                // Add more profiles
               ],
               description:
-                "reeCoder is a future-focused software agency building smart AI and web solutions.",
+                "reeCoder is a future-focused software agency building smart AI Solutions and web solutions.",
               address: {
                 "@type": "PostalAddress",
                 addressCountry: "PK",
@@ -98,6 +102,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-      }
-  )
 }
