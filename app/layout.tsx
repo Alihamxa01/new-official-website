@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "reeCoder is a future-focused software house specializing in AI agents, intelligent chatbots, full-stack web development, and enterprise-ready digital transformation solutions. WE BUILD WHAT YOU IMAGINE.",
   keywords:
-    "reeCoder, reecoder, AI Agents, software house, custom software development, web development, AI solutions, automation tools, digital transformation, intelligent chatbot, chatbot development, enterprise software, API development, app development, full-stack development, reecoder.com, machine learning, deep learning, API integration, tech startup, innovation lab, business automation, smart software, scalable solutions, modern web apps, AI-powered tools, digital products, AI automation, software consultancy, no-code solutions, low-code platforms",
+    "reeCoder, reecoder, AI Agents, software house, custom software development, backend development, AI solutions, automation tools, digital transformation, intelligent chatbot, chatbot development, enterprise software, API development, app development, full-stack development, reecoder.com, machine learning, deep learning, API integration, tech startup, innovation lab, business automation, smart software, scalable solutions, modern web apps, AI-powered tools, AI automation, software, no-code solutions, low-code platforms",
   generator: "reeCoder",
   metadataBase: new URL("https://www.reecoder.com"),
   alternates: {
@@ -75,9 +75,9 @@ export default function RootLayout({
               url: "https://www.reecoder.com",
               logo: "https://www.reecoder.com/imgg.png",
               sameAs: [
-                "https://twitter.com/reecoder",
+                "https://twitter.com/thereecoder",
                 "https://www.linkedin.com/company/reecoder",
-                "https://www.instagram.com/ree_coder",
+                "https://www.instagram.com/thereecoder",
               ],
               description:
                 "reeCoder is a future-focused software agency building smart AI and web solutions.",
