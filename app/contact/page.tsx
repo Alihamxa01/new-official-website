@@ -322,7 +322,6 @@ import { useState } from "react"
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle, Users, Globe, Award } from "lucide-react"
 import { FaLinkedinIn, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import { FiArrowUpRight } from 'react-icons/fi';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -687,7 +686,7 @@ export default function Contact() {
             href="mailto:info@reecoder.com" 
             className="text-cyan-600 hover:text-cyan-500 font-medium text-sm inline-flex items-center"
           >
-            info@reecoder.com <FiArrowUpRight className="ml-1" />
+            info@reecoder.com 
           </a>
           <p className="text-xs text-slate-500 mt-1">We prioritize professional queries</p>
         </div>
