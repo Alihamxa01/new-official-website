@@ -321,7 +321,7 @@ import type React from "react"
 import { useState } from "react"
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle, Users, Globe, Award } from "lucide-react"
 import { FaLinkedinIn, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
+// import { HiOutlineMail } from 'react-icons/hi';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -678,7 +678,7 @@ export default function Contact() {
     <div className="mt-20 max-w-xl mx-auto bg-white border border-slate-200 rounded-xl shadow-md p-6 sm:p-8 text-left">
       <div className="flex items-start sm:items-center gap-5">
         <div className="w-12 h-12 flex items-center justify-center bg-cyan-100 rounded-full border border-cyan-200">
-          <HiOutlineMail className="w-6 h-6 text-cyan-500" />
+{/*           <HiOutlineMail className="w-6 h-6 text-cyan-500" /> */}
         </div>
         <div>
           <h3 className="text-base font-semibold text-slate-800 mb-1">Connect via Email</h3>
