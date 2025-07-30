@@ -319,8 +319,8 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle, Users, Globe, Award } from "lucide-react"
-import { FaLinkedinIn, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
+import { Mail, MapPin, Clock, Send, CheckCircle, Users, Globe, Award } from "lucide-react"
+  import { FaLinkedinIn, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
