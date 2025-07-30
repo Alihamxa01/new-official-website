@@ -304,23 +304,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 "use client"
 
 import type React from "react"
 import { useState } from "react"
-import { Mail, MapPin, Clock, Send, CheckCircle, Users, Globe, Award } from "lucide-react"
-  import { FaLinkedinIn, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
+import { Mail, Phone, MapPin, Clock, Send, CheckCircle, Users, Globe, Award } from "lucide-react"
+import { Linkedin, Twitter, Instagram,  } from 'lucide-react';
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -382,7 +372,7 @@ export default function Contact() {
       {/* Contact Section */}
       <section className="py-12 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 md:gap-16"> {/*lg:grid-cols-2 */}
             {/* Contact Form */}
             {/* <div className="animate-slide-in-left">
               <div className="bg-gradient-to-br from-slate-50 to-white p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-xl md:shadow-2xl border border-slate-100">
@@ -460,12 +450,6 @@ export default function Contact() {
                 </form>
               </div>
             </div> */}
-
-
-
-
-
-
 
             {/* Contact Information */}
             <div className="animate-slide-in-right">
@@ -562,7 +546,7 @@ export default function Contact() {
       </section>
 
       {/* Global Presence Section */}
-      <section className="py-12 md:py-24 bg-gradient-to-br from-white to-white">
+      <section className="py-12 md:py-24 bg-gradient-to-br from-slate-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-slide-up">
             <div className="inline-flex items-center px-3 py-1 md:px-4 md:py-2 bg-purple-100 rounded-full mb-4 md:mb-6">
@@ -609,6 +593,16 @@ export default function Contact() {
         </div>
       </section>
 
+
+
+
+
+
+
+
+
+
+
 {/* {/* Premium Social Connect Section */}
 <section className="py-24 bg-white relative overflow-hidden text-slate-800">
   {/* Decorative blurred shapes */}
@@ -640,17 +634,17 @@ export default function Contact() {
       {[
         {
           name: "LinkedIn",
-          icon: <FaLinkedinIn className="w-6 h-6 text-[#0A66C2]" />,
+      icon: <Linkedin className="w-8 h-8 text-[#0A66C2]" />,
           url: "https://www.linkedin.com/company/reecoder/",
         },
         {
           name: "Twitter",
-          icon: <FaTwitter className="w-6 h-6 text-[#1DA1F2]" />,
+icon: <Twitter className="w-8 h-8  text-[#1DA1F2]" />,
           url: "https://x.com/thereecoder",
         },
         {
           name: "Instagram",
-          icon: <FaInstagram className="w-6 h-6 text-[#E1306C]" />,
+      icon: <Instagram className="w-8 h-8  text-[#E1306C]" />,
           url: "https://www.instagram.com/thereecoder/",
         },
       
@@ -676,8 +670,8 @@ export default function Contact() {
     {/* Email Contact Card */}
     <div className="mt-20 max-w-xl mx-auto bg-white border border-slate-200 rounded-xl shadow-md p-6 sm:p-8 text-left">
       <div className="flex items-start sm:items-center gap-5">
-        <div className="w-12 h-12 flex items-center justify-center bg-cyan-100 rounded-full border border-cyan-200">
-{/*           <HiOutlineMail className="w-6 h-6 text-cyan-500" /> */}
+        <div className="w-12 h-12 flex items-center justify-center bg-cyan-50 rounded-full border border-cyan-200">
+          <Mail className="w-6 h-6 text-cyan-500" />
         </div>
         <div>
           <h3 className="text-base font-semibold text-slate-800 mb-1">Connect via Email</h3>
@@ -695,6 +689,9 @@ export default function Contact() {
 </section>
 
 
+
+
     </div>
   )
 }
+
