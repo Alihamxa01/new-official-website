@@ -726,7 +726,7 @@ export default function About() {
                       title: "Innovation Hub",
                       desc: "We plan to establish an innovation lab focused on experimental technologies and open-source contributions to the developer community.",
                       icon: <Rocket className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" role="img" aria-label="Innovation icon" />,
-                      grad: ["from-green-500", "to-emerald-500"],
+              grad: ["from-green-500", "to-emerald-500"],
                     },
                     {
                       title: "Sustainable Growth",
