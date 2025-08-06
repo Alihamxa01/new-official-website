@@ -51,10 +51,6 @@
 //   gradient: "from-green-500 to-lime-500",
 //   bgGradient: "from-lime-100 to-green-100",
 // },
-
-  
-//   ]
-
 //   return (
 //     <div className="pt-12 md:pt-16 lg:pt-20">
 //       {/* Hero Section */}
@@ -655,7 +651,7 @@ export default function Services() {
 
                   <Link
                     href="/contact"
-                    className={`w-full inline-flex items-center justify-center px-3 py-2 md:px-4 md:py-3 lg:px-6 lg:py-3 bg-gradient-to-r ${service.gradient} text-white font-semibold rounded-lg hover:shadow-md transition-all duration-300 text-xs md:text-sm lg:text-base`}
+           className={`w-full inline-flex items-center justify-center px-3 py-2 md:px-4 md:py-3 lg:px-6 lg:py-3 bg-gradient-to-r ${service.gradient} text-white font-semibold rounded-lg hover:shadow-md transition-all duration-300 text-xs md:text-sm lg:text-base`}
                   >
                     Learn More
                     <ArrowRight className="ml-2 w-3 h-3 md:w-4 md:h-4" role="img" aria-label="Arrow right icon" />
